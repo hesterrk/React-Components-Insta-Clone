@@ -20,7 +20,7 @@ const LikeSection = props => {
       </div>
     </div>
     <p className="like-number">
-      
+      {props.likeState}
       likes</p>
 </div>
   )

@@ -30,8 +30,6 @@ const Post = props => {
       {/* //add props to likeSection to be passed down to likesection */}
      {/* //one for setter function and one for state */}
       <LikeSection
-      likes={props.post.likes}
-      
       likeState={likeState}
       setLikeState={setLikeState}
       />
