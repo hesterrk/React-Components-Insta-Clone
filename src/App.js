@@ -25,13 +25,12 @@ const App = () => {
   return (
     <div className="App">
       {/* Add components here and pass props where appropriate */}
+      <SearchBar />
       <PostsPage
-      // setDummy={setDummy}
-      // setDummyState={setDummyState}
 
       data={dummyData}
       />
-      <SearchBar />
+     
   
      
 

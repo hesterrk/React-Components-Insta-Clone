@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
 
@@ -11,7 +11,9 @@ const LikeSection = props => {
       key="likes-icons-container"
     >
       <div className="like-section-wrapper">
-        <i className="far fa-heart" onClick={() => props.setLikeState(props.likeState + 1)}   />
+        <button onClick={() => props.setLikeState((props.likeState) + 1)} >
+        <i className="far fa-heart" />
+        </button>
       </div>
       <div className="like-section-wrapper">
         <i className="far fa-comment" />

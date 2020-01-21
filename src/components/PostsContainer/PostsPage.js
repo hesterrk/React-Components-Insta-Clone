@@ -13,6 +13,7 @@ const PostsPage = (props) => {
         
  {props.data.map((post) => {
  return <Post key={props.data} 
+ 
  post={post}/>
  
  

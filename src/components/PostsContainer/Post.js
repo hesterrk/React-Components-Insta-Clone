@@ -10,7 +10,7 @@ import "./Posts.css";
 const Post = props => {
   // set up state for the likes
 
-  const [likeState, setLikeState] = useState(0);
+  const [likeState, setLikeState] = useState(props.post.likes);
 
   return (
     <div className="post-border">
@@ -30,6 +30,7 @@ const Post = props => {
       {/* //add props to likeSection to be passed down to likesection */}
      {/* //one for setter function and one for state */}
       <LikeSection
+      likes={props.post.likes}
       
       likeState={likeState}
       setLikeState={setLikeState}
@@ -43,3 +44,4 @@ const Post = props => {
 };
 
 export default Post;
+
