@@ -17,15 +17,19 @@ const App = () => {
   // set up state for the dummy data and pass to your PostsPage
 
   const [setDummy, setDummyState] = useState({dummyData});
+  console.log(setDummy);
+  console.log(dummyData);
+
+
  
   return (
     <div className="App">
       {/* Add components here and pass props where appropriate */}
-
       <PostsPage
-    
-      setDummy={setDummy}
-      setDummyState={setDummyState}
+      // setDummy={setDummy}
+      // setDummyState={setDummyState}
+
+      data={dummyData}
       />
       <SearchBar />
   
