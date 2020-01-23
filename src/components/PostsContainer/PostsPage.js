@@ -12,6 +12,7 @@ const PostsPage = (props) => {
 {/* //passing data from App state  */}
         
  {props.data.map((post) => {
+   //give the Post component that we are creating over and over again  a props called key- putting something unique inside
  return <Post key={props.data} 
  
  post={post}/>
